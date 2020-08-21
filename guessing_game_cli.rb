@@ -10,7 +10,9 @@ def run_guessing_game
     else
       puts "Sorry! The computer guessed #{random_number}."
     end
-   user_input = gets.chomp
+  puts "Guess a number between 1 and 6"
+  random_number = (rand(6) + 1).to_s
+  user_input = gets.chomp
   end
   puts "Goodbye!"
 end
